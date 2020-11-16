@@ -17,6 +17,4 @@ export class HomePage {
   	this.name = "this is ionic app"
   }
 
-
-
 }
