@@ -46,7 +46,13 @@ export class EmployeesService {
 	  			return emp.id === employeeId;
 	  		})
 	  	}
+  }
 
+  deleteEmployeeInfo (employeeId : string)
+  {
+	  	this.employees = this.employees.filter( emp => {
+	  		return emp.id !== employeeId;
+	  	})  	
   }
 
 }
