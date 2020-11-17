@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar  color="danger">
+  	<ion-buttons slot="start">
+
+  		<ion-back-button defaultHref='/employees'></ion-back-button>
+  		
+  	</ion-buttons>
+    <ion-title>{{ employeeInfoDetails.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-card>
+	  <ion-img [src]="employeeInfoDetails.avatar"></ion-img>
+	  <ion-card-header>
+	    <ion-card-subtitle>{{ employeeInfoDetails.age }} year</ion-card-subtitle>
+	    <ion-card-title> {{ employeeInfoDetails.name }} </ion-card-title>
+	  </ion-card-header>
+
+	  <ion-card-content>
+	    {{ employeeInfoDetails.address }}
+	  </ion-card-content>
+	</ion-card>
+
+</ion-content>

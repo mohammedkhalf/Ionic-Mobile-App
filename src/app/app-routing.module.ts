@@ -13,7 +13,16 @@ const routes: Routes = [
   },
   {
     path: 'employees',
-    loadChildren: () => import('./employees/employees.module').then( m => m.EmployeesPageModule)
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./employees/employees.module').then( m => m.EmployeesPageModule)
+      },
+      {
+        path: ':employeeId',
+        loadChildren: () => import('./employees/employee-info/employee-info.module').then( m => m.EmployeeInfoPageModule)
+      }
+    ]
   },
 ];
 

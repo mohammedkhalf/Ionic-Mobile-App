@@ -1,9 +1,27 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>employees</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-	<p> Employee Page </p>
+
+	<ion-list>
+
+	  <ion-item *ngFor="let person of employees"
+	   [routerLink]="['/employees',person.id]"
+	  >
+	  	<ion-avatar slot="start">
+	  		<ion-img [src]="person.avatar"></ion-img>
+		</ion-avatar>
+
+	    <ion-label>{{ person.name }}</ion-label>
+
+	  </ion-item>
+	
+
+	</ion-list>
+
+
+
 </ion-content>
