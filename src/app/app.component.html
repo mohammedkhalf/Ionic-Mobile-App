@@ -1,3 +1,19 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button  routerLinkActive="tab-selected"  routerLink="/views-employees">
+      <ion-icon name="apps-outline"></ion-icon>
+      <ion-label>Employees</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button  routerLinkActive="tab-selected"  routerLink="/create-employee">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-label>Create</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
