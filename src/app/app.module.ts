@@ -23,7 +23,7 @@ import { environment } from '../environments/environment';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
-	AngularFireModule,
+	AngularFireModule.initializeApp(environment.firebaseConfig),
 	AngularFirestoreModule,
 	AngularFireStorageModule,
 	AngularFireAuthModule,
