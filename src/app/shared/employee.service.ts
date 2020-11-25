@@ -49,11 +49,10 @@ export class EmployeeService {
 	  	})
 	  }
 
-	  deleteEmployee(id:string)
+	deleteEmployee(id:string)
   	{
   		this.employeeRef = this.db.object('/employee/'+id)
   		this.employeeRef.remove()
   	}
-
   
 }

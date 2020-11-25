@@ -40,7 +40,6 @@ export class CreateEmployeePage implements OnInit {
 	  	}
 	  	else
 	  	{
-	  		console.log("hello")
 	  		this.employeeService.createEmployee(this.employeeForm.value)
 	  		.then(res=>{
 	  			console.log(res)
