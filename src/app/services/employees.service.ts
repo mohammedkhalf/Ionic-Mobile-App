@@ -34,7 +34,7 @@ export class EmployeesService {
 
   constructor() {}
 
-  getAllEnployees ()
+  getAllEmployees ()
   {
   	return [...this.employees]
   }

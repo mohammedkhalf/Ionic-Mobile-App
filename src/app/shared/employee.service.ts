@@ -40,14 +40,14 @@ export class EmployeeService {
 
 
   	UpdateEmployee(id,emp:Employee)
-	  {
+	{
 	  	return this.employeeRef.update({
 	  		name:emp.name,
 	  		email:emp.email,
 			mobile:emp.mobile,
 			details:emp.details,
 	  	})
-	  }
+	}
 
 	deleteEmployee(id:string)
   	{
