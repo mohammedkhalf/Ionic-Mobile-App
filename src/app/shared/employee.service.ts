@@ -23,8 +23,8 @@ export class EmployeeService {
   	return this.employeeListRef.push({
   		name:emp.name,
   		email:emp.email,
-		mobile:emp.mobile,
-		details:emp.details,
+	  	mobile:emp.mobile,
+	  	details:emp.details,
   	})
 
   }

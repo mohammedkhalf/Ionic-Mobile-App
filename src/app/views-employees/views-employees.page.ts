@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Employee } from '../models/Employee';
 import { EmployeeService } from '../shared/employee.service';
 
-import { EmployeeService } from '../shared/employee.service';
-
 
 @Component({
   selector: 'app-views-employees',
