@@ -7,6 +7,7 @@ import { Employee } from '../models/Employee';
 @Injectable({
   providedIn: 'root'
 })
+
 export class EmployeeService {
 
   employeeListRef : AngularFireList<any>;
@@ -22,8 +23,8 @@ export class EmployeeService {
   	return this.employeeListRef.push({
   		name:emp.name,
   		email:emp.email,
-		  mobile:emp.mobile,
-		  details:emp.details,
+		mobile:emp.mobile,
+		details:emp.details,
   	})
 
   }
@@ -49,7 +50,7 @@ export class EmployeeService {
 	  	})
 	  }
 
-	  deleteEmployee(id:string)
+	deleteEmployee(id:string)
   	{
   		this.employeeRef = this.db.object('/employee/'+id)
   		this.employeeRef.remove()

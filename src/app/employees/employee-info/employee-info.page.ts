@@ -43,7 +43,6 @@ export class EmployeeInfoPage implements OnInit {
   			{
   			  	text:"Remove",
   			  	handler:()=>{
-
 	  			  	this.employeesService.deleteEmployeeInfo(this.employeeInfoDetails.id)
 	  				this.router.navigate(['/employees'])
   			  	}

@@ -34,7 +34,7 @@ export class EmployeesService {
 
   constructor() {}
 
-  getAllEnployees ()
+  getAllEmployees ()
   {
   	return [...this.employees]
   }
@@ -51,7 +51,7 @@ export class EmployeesService {
   deleteEmployeeInfo (employeeId : string)
   {
 	  	this.employees = this.employees.filter( emp => {
-	  		return emp.id !== employeeId;
+	  		return emp.id !== employeeId;    //return all elements in array except this element employeeId
 	  	})  	
   }
 

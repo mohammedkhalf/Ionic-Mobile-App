@@ -17,7 +17,7 @@ export class EmployeesPage implements OnInit {
   constructor( private employeesService:EmployeesService ) { }
 
   ngOnInit() {
-  	this.employees = this.employeesService.getAllEnployees();
+  	this.employees = this.employeesService.getAllEmployees();
   }
 
 }

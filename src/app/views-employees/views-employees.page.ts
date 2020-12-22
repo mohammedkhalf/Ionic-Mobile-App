@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { EmployeeService } from '../shared/employee.service';
+
+
 @Component({
   selector: 'app-views-employees',
   templateUrl: './views-employees.page.html',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewsEmployeesPage implements OnInit {
 
-  constructor() { }
+  constructor(private employeeService:EmployeeService) { }
 
   ngOnInit() {
   }
